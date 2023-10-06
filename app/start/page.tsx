@@ -1,8 +1,12 @@
+import OuterBorderStartPage from "@/app/start/_components/OuterBorderStartPage";
+import GameInstructions from "@/app/start/_components/GameInstructions";
 
 
 const Page = () => {
   return (
-    <h1>Start game page</h1>
+    <OuterBorderStartPage>
+      <GameInstructions />
+    </OuterBorderStartPage>
   )
 }
 
