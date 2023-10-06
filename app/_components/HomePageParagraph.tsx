@@ -12,7 +12,7 @@ const HomePageParagraph = ({message}: HomePageParagraphProps) => {
       transition={{duration: 1}}
       className="mt-3 text-2xl"
     >
-      {message}
+      <span className="hover:scale-125">{message}</span>
     </motion.p>
   )
 }
