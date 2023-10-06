@@ -1,6 +1,10 @@
 import { motion } from "framer-motion"
 
-const homePageLogo = () => {
+type homePageLogoProps = {
+  imagePath : string
+}
+
+const homePageLogo = ({imagePath} : homePageLogoProps) => {
   return (
     <motion.div
         initial={{ opacity: 0, x: -100 }}
@@ -9,7 +13,7 @@ const homePageLogo = () => {
         className="mt-4"
       >
       <img
-        src="/homepageImage.png"
+        src={imagePath}
         alt="Homepage Image"
         className="w-64 h-64 rounded-3xl"
       />
